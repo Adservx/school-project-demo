@@ -1,0 +1,1177 @@
+/* ========================================
+   COMPONENT STYLES - Himalaya Apex Academy
+   AI-optimized component-specific styles
+   ======================================== */
+
+/* ========================================
+   HEADER COMPONENT
+   ======================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+}
+
+/* Logo Section with School Name */
+.logo-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.logo {
+  position: relative;
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Mountain Icon Logo */
+.logo-text {
+  display: none;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 30px solid var(--color-teal);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 22px solid var(--color-accent);
+  transform: translateX(-8px) translateY(8px);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Snow peak effect */
+.logo {
+  background: radial-gradient(circle at 50% 30%, rgba(255, 255, 255, 0.3), transparent 40%);
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.school-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.school-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.school-tagline {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  width: 25px;
+  height: 2px;
+  background: var(--color-text-primary);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8px);
+}
+
+/* Navigation Menu */
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: var(--transition);
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+  color: var(--color-accent);
+}
+
+.nav-link.active {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ========================================
+   HOME PAGE COMPONENTS
+   ======================================== */
+
+/* Hero Section - Nepali School Building - Full Frame */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3rem;
+  background: 
+    linear-gradient(135deg, rgba(26, 31, 46, 0.65) 0%, rgba(45, 53, 72, 0.65) 50%, rgba(35, 42, 58, 0.65) 100%),
+    url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1800&q=80') center/cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.03) 50%, transparent 70%);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(30deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(30deg); }
+}
+
+.hero-content {
+  text-align: center;
+  padding: 3rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background: 
+    linear-gradient(rgba(26, 31, 41, 0.95), rgba(26, 31, 41, 0.95)),
+    url('https://images.unsplash.com/photo-1562774053-701939374585?w=1400&q=80') center/cover;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.welcome-text {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+/* Feature Cards with CSS-only icons */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: var(--color-bg-elevated);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.feature-card h3 {
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+/* Events Section */
+.events-section {
+  background: 
+    linear-gradient(rgba(26, 31, 41, 0.95), rgba(26, 31, 41, 0.95)),
+    url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400&q=80') center/cover;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.events-table-wrapper {
+  overflow-x: auto;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.events-table thead {
+  background: var(--color-bg-primary);
+}
+
+.events-table th,
+.events-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.events-table th {
+  color: var(--color-text-primary);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-border);
+  background: var(--color-bg-elevated);
+}
+
+.events-table tbody tr {
+  transition: var(--transition-fast);
+}
+
+.events-table tbody tr:hover {
+  background: var(--color-bg-secondary);
+}
+
+.event-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* ========================================
+   ADMISSIONS PAGE
+   ======================================== */
+
+.admissions-info {
+  margin-top: 2rem;
+}
+
+.info-section {
+  background: 
+    linear-gradient(rgba(26, 31, 41, 0.95), rgba(26, 31, 41, 0.95)),
+    url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1400&q=80') center/cover;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  margin-bottom: 3rem;
+  box-shadow: var(--shadow-md);
+}
+
+.info-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.admission-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.step-card {
+  background: var(--color-bg-elevated);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background: var(--color-accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 auto 1rem;
+}
+
+.step-card h3 {
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.step-card p {
+  color: var(--color-text-secondary);
+}
+
+/* Application Form - Nepali Style */
+.form-section {
+  background: var(--color-bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--color-crimson);
+  border-left: 4px solid var(--color-blue);
+}
+
+.admission-form {
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.ai-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.15rem 0.5rem;
+  background: linear-gradient(135deg, #00ff88, #00aa55);
+  color: var(--color-bg-primary);
+  border-radius: 8px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  cursor: help;
+}
+
+.form-input,
+.form-select {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--color-bg-primary);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  transition: var(--transition-fast);
+}
+
+.form-input:focus,
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-crimson);
+  box-shadow: 0 0 10px rgba(220, 20, 60, 0.3);
+}
+
+.form-input.error,
+.form-select.error {
+  border-color: var(--color-error);
+}
+
+/* Disabled form inputs - Representative/Showcase styling */
+.form-input:disabled,
+.form-select:disabled {
+  background: rgba(26, 35, 50, 0.5);
+  border-color: rgba(255, 255, 255, 0.05);
+  color: rgba(240, 244, 248, 0.5);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+button:disabled:hover {
+  box-shadow: none !important;
+}
+
+.error-text {
+  display: block;
+  margin-top: 0.5rem;
+  color: var(--color-error);
+  font-size: 0.85rem;
+}
+
+.success-message {
+  padding: 1rem;
+  background: rgba(16, 185, 129, 0.1);
+  border: 1px solid var(--color-success);
+  border-left: 4px solid var(--color-success);
+  border-radius: 8px;
+  color: var(--color-success);
+  margin-bottom: 1.5rem;
+  animation: slideDown 0.3s ease;
+}
+
+.btn-submit {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Eligibility Table - Nepali Style */
+.eligibility-section {
+  background: var(--color-bg-secondary);
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid var(--color-crimson);
+  border-right: 4px solid var(--color-blue);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 1rem;
+}
+
+.eligibility-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.eligibility-table th,
+.eligibility-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.eligibility-table th {
+  background: var(--color-bg-primary);
+  color: var(--color-crimson);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-crimson);
+}
+
+/* ========================================
+   GALLERY PAGE
+   ======================================== */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.gallery-card {
+  background: var(--color-bg-elevated);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.gallery-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-accent);
+}
+
+/* Gallery Images - Nepal School Themed */
+.gallery-image {
+  height: 220px;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Nepal school themed images */
+.gradient-1 { 
+  background-image: url('https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&q=80');
+}
+.gradient-2 { 
+  background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&q=80');
+}
+.gradient-3 { 
+  background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=600&q=80');
+}
+.gradient-4 { 
+  background-image: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&q=80');
+}
+.gradient-5 { 
+  background-image: url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&q=80');
+}
+.gradient-6 { 
+  background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=80');
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition-normal);
+}
+
+.gallery-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.view-icon {
+  font-size: 3rem;
+}
+
+.gallery-info {
+  padding: 1.5rem;
+}
+
+.gallery-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary);
+}
+
+.gallery-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Lightbox Modal */
+.lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  padding: 2rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.lightbox-content {
+  background: var(--color-bg-elevated);
+  border-radius: var(--border-radius);
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  position: relative;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+  animation: scaleIn 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--color-accent);
+  color: var(--color-bg-primary);
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close:hover {
+  transform: rotate(90deg);
+  box-shadow: var(--shadow-glow);
+}
+
+.lightbox-image {
+  height: 400px;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid var(--color-crimson);
+}
+
+.lightbox-watermark {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.3);
+  letter-spacing: 4px;
+}
+
+.lightbox-info {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.lightbox-title {
+  font-size: 2rem;
+  color: var(--color-accent);
+  margin-bottom: 0.5rem;
+}
+
+.lightbox-category {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-accent);
+  color: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.lightbox-description {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+/* ========================================
+   ABOUT PAGE
+   ======================================== */
+
+/* Principal's Message Card */
+.principal-message {
+  margin-bottom: 3rem;
+}
+
+.message-card {
+  background: var(--color-bg-elevated);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.principal-name {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.principal-designation {
+  color: var(--color-accent);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.message-content {
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+  text-align: left;
+}
+
+/* Mission & Vision Cards */
+.mission-vision-section {
+  margin-bottom: 3rem;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.mv-card {
+  background: var(--color-bg-elevated);
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+
+.mv-card h3 {
+  color: var(--color-accent);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.mv-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.8;
+}
+
+/* History Section */
+.history-section {
+  background: 
+    linear-gradient(rgba(26, 31, 41, 0.95), rgba(26, 31, 41, 0.95)),
+    url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=1400&q=80') center/cover;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 3rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-md);
+}
+
+.history-content {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  font-size: 1.05rem;
+}
+
+/* Facilities List */
+.facilities-section {
+  margin-bottom: 3rem;
+}
+
+.facilities-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.facility-item {
+  background: var(--color-bg-elevated);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.facility-item:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-md);
+}
+
+.facility-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+}
+
+/* ========================================
+   CONTACT PAGE
+   ======================================== */
+
+.contact-info-wrapper {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.contact-instructions {
+  background: 
+    linear-gradient(rgba(26, 31, 41, 0.95), rgba(26, 31, 41, 0.95)),
+    url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1400&q=80') center/cover;
+  padding: 3rem 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  margin-bottom: 3rem;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+}
+
+.instruction-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  margin-top: 1.5rem;
+}
+
+textarea.form-input {
+  resize: vertical;
+  min-height: 120px;
+  font-family: inherit;
+}
+
+/* Contact Information Section */
+.contact-info-section {
+  background: var(--color-bg-elevated);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-info-section h2 {
+  color: var(--color-accent);
+  margin-bottom: 1.5rem;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact-item .contact-icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contact-item h4 {
+  color: var(--color-text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contact-item p {
+  color: var(--color-text-secondary);
+  margin: 0.25rem 0;
+}
+
+/* ========================================
+   FOOTER COMPONENT
+   ======================================== */
+
+.footer {
+  background: var(--color-bg-secondary);
+  border-top: 1px solid var(--color-border);
+  margin-top: 4rem;
+  padding: 3rem 0 1rem;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.footer-section {
+  color: var(--color-text-secondary);
+}
+
+.footer-title {
+  color: var(--color-accent);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.contact-icon {
+  font-size: 1.2rem;
+  min-width: 24px;
+}
+
+.footer-links {
+  list-style: none;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  color: var(--color-text-secondary);
+  transition: var(--transition-fast);
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+  padding-left: 5px;
+}
+
+/* Map Placeholder */
+.map-placeholder {
+  background: var(--color-bg-elevated);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.map-pin {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.map-text {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+}
+
+
+.copyright {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.footer-note {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-style: italic;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+   ======================================== */
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0.75rem 1rem;
+  }
+
+  .school-name {
+    display: none;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  /* Show hamburger menu on mobile */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Mobile navigation menu */
+  .nav-menu {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 250px;
+    height: calc(100vh - 70px);
+    background: rgba(10, 14, 26, 0.98);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    gap: 0;
+    padding: 2rem 0;
+    border-left: 2px solid rgba(0, 255, 136, 0.3);
+    box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .nav-menu.mobile-open {
+    right: 0;
+  }
+
+  .nav-link {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    background: rgba(0, 255, 136, 0.1);
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admission-steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .step-card {
+    padding: 1.5rem;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lightbox-content {
+    padding: 1.5rem;
+  }
+
+  .lightbox-image {
+    height: 250px;
+  }
+
+  /* About page mobile styles */
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contact page mobile styles */
+  .contact-info-wrapper {
+    padding: 0 1rem;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .hero {
+    min-height: 100vh;
+    background-attachment: scroll;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events-table th,
+  .events-table td {
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+}
