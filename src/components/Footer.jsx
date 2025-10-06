@@ -65,12 +65,6 @@ function Footer() {
       {/* Copyright Bar */}
       <div className="footer-bottom">
         <p className="copyright">{t.copyright[language]}</p>
-        <p className="footer-note">
-          {language === 'en' 
-            ? '🤖 AI-optimized for Nepal • Built with React' 
-            : '🤖 नेपालको लागि AI-अनुकूलित • React सँग निर्मित'
-          }
-        </p>
       </div>
     </footer>
   );
