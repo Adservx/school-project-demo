@@ -1,32 +1,32 @@
-# 🏔️ Himalaya Apex Academy - School Website Mockup
+# 🏫 Ranabir Janahit Secondary School - Official Website
 
 ![React](https://img.shields.io/badge/React-18.2.0-blue)
 ![License](https://img.shields.io/badge/License-MIT-green)
-![AI Optimized](https://img.shields.io/badge/AI-Optimized-brightgreen)
+![Production Ready](https://img.shields.io/badge/Production-Ready-success)
 
-A **complete, static representative mockup** for a fictional Nepali school built with React 18+ and React Router DOM. Designed for **low-bandwidth Nepal users** with a mobile-first, accessible, and culturally sensitive approach.
+A **production-level school website** for Ranabir Janahit Secondary School, Biratnagar, Nepal. Built with React 18+ and React Router DOM, designed for **optimal performance** with a mobile-first, accessible, and culturally sensitive approach.
 
 ---
 
 ## ✨ Features
 
 ### 🎨 Design & UX
-- **Dark Theme**: Navy blue (#0a0e1a) background with neon green (#00ff88) accents
+- **Modern Professional Theme**: Blue (#1e3a8a) with golden accents (#fbbf24)
 - **Mobile-First Responsive**: CSS media queries for all screen sizes
-- **AI-Vibe Elements**: Neural network loading animation, neon glow effects
-- **Zero Images**: CSS gradients and Unicode icons for fast loading on 2G networks
-- **Himalayan Gradient**: CSS linear-gradients mimicking mountain landscapes
+- **Custom Logo**: Professional SVG logo with book and graduation cap
+- **Optimized Graphics**: SVG icons and CSS for fast loading
+- **Clean Modern Design**: Professional appearance suitable for educational institution
 
 ### 🌏 Bilingual Support
 - **English/Nepali Toggle**: useState hook with localStorage persistence
 - **Devanagari Script**: Proper Nepali Unicode rendering
 - **Cultural Context**: Bikram Sambat calendar dates, local festivals (Dashain)
 
-### 🚀 AI Optimization
-- **Low Bandwidth**: No external images, minimal dependencies
-- **Fast Loading**: CSS-only graphics, hardware-accelerated animations
-- **Budget Android Friendly**: Optimized for rural Nepal users on 2G/3G
-- **Offline Ready**: Static SPA structure (PWA-ready)
+### 🚀 Performance Optimization
+- **Low Bandwidth Friendly**: Minimal dependencies, optimized assets
+- **Fast Loading**: SVG graphics, efficient CSS, hardware-accelerated animations
+- **Mobile Optimized**: Works smoothly on various devices and network conditions
+- **PWA Ready**: Static SPA structure for offline capabilities
 
 ### ♿ Accessibility
 - **ARIA Labels**: Screen reader support

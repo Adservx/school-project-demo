@@ -351,6 +351,15 @@ a:hover {
   margin-left: 0.25rem;
 }
 
+.highlight {
+  font-weight: 700;
+  background: var(--gradient-text);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0 2px 8px rgba(59, 130, 246, 0.4);
+}
+
 /* ========================================
    ACCESSIBILITY
    ======================================== */

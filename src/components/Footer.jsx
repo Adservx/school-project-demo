@@ -1,70 +1,65 @@
-import React, { useContext } from 'react';
-import { LanguageContext } from '../App';
-import { translations } from '../utils/translations';
+import React from 'react';
+import { schoolInfo } from '../utils/content';
 
-// AI-optimized: Lightweight footer with Unicode icons (no icon libraries)
+// Lightweight footer with Unicode icons (no icon libraries)
 function Footer() {
-  const { language } = useContext(LanguageContext);
-  const t = translations.footer;
 
   return (
     <footer className="footer" role="contentinfo">
       <div className="footer-container">
         {/* Contact Information */}
         <div className="footer-section">
-          <h3 className="footer-title">{t.contactTitle[language]}</h3>
+          <h3 className="footer-title">Contact Us</h3>
           
           <div className="footer-contact">
             <p className="contact-item">
               <span className="contact-icon">📍</span>
-              {t.address[language]}
+              {schoolInfo.location}
             </p>
             
             <p className="contact-item">
               <span className="contact-icon">📞</span>
-              {t.phone[language]}: +977 01-4123456
+              Phone: {schoolInfo.phone}
+            </p>
+            
+            <p className="contact-item">
+              <span className="contact-icon">👤</span>
+              {schoolInfo.focalPerson.name}
             </p>
             
             <p className="contact-item">
               <span className="contact-icon">📧</span>
-              {t.email[language]}: info@himalayaapex.edu.np
-            </p>
-            
-            <p className="contact-item">
-              <span className="contact-icon">💬</span>
-              WhatsApp: +977 9841234567
+              Email: {schoolInfo.focalPerson.email}
             </p>
           </div>
         </div>
 
         {/* Quick Links */}
         <div className="footer-section">
-          <h3 className="footer-title">
-            {language === 'en' ? 'Quick Links' : 'द्रुत लिंकहरू'}
-          </h3>
+          <h3 className="footer-title">Quick Links</h3>
           <ul className="footer-links">
-            <li><a href="/home" className="footer-link">{language === 'en' ? 'Home' : 'घर'}</a></li>
-            <li><a href="/admissions" className="footer-link">{language === 'en' ? 'Admissions' : 'भर्ना'}</a></li>
-            <li><a href="/gallery" className="footer-link">{language === 'en' ? 'Gallery' : 'ग्यालरी'}</a></li>
+            <li><a href="/home" className="footer-link">Home</a></li>
+            <li><a href="/about" className="footer-link">About</a></li>
+            <li><a href="/admissions" className="footer-link">Admissions</a></li>
+            <li><a href="/gallery" className="footer-link">Gallery</a></li>
+            <li><a href="/contact" className="footer-link">Contact</a></li>
           </ul>
         </div>
 
         {/* Map Placeholder (Google Maps iframe) */}
         <div className="footer-section">
-          <h3 className="footer-title">
-            {language === 'en' ? 'Find Us' : 'हामीलाई भेट्नुहोस्'}
-          </h3>
+          <h3 className="footer-title">Find Us</h3>
           <div className="map-placeholder" aria-label="School location map">
-            {/* AI-optimized: CSS-only map placeholder to avoid iframe load */}
+            {/* CSS-only map placeholder to avoid iframe load */}
             <div className="map-pin">📍</div>
-            <p className="map-text">New Baneshwor, Kathmandu</p>
+            <p className="map-text">Waling, Syangja</p>
           </div>
         </div>
       </div>
 
       {/* Copyright Bar */}
       <div className="footer-bottom">
-        <p className="copyright">{t.copyright[language]}</p>
+        <p className="copyright">© 2025 {schoolInfo.name}. All rights reserved.</p>
       </div>
     </footer>
   );

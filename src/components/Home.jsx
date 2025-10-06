@@ -1,32 +1,78 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { LanguageContext } from '../App';
-import { translations } from '../utils/translations';
 
-// AI-optimized: Hero with Himalayan gradient, no images for 2G speed
+// Hero with Himalayan gradient, no images for 2G speed
 function Home() {
-  const { language } = useContext(LanguageContext);
-  const t = translations.home;
-  const events = translations.events;
+  const quotes = [
+    {
+      text: "Education is the passport to the future, for tomorrow belongs to those who prepare for it today.",
+      author: "Malcolm X"
+    },
+    {
+      text: "The beautiful thing about learning is that no one can take it away from you.",
+      author: "B.B. King"
+    },
+    {
+      text: "Education is not preparation for life; education is life itself.",
+      author: "John Dewey"
+    }
+  ];
+
+  const [currentQuote, setCurrentQuote] = React.useState(0);
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentQuote((prev) => (prev + 1) % quotes.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [quotes.length]);
 
   return (
     <div className="page-container home-page">
       {/* Hero Section */}
-      <section className="hero" aria-labelledby="hero-title">
+      <section 
+        className="hero" 
+        aria-labelledby="hero-title"
+        style={{
+          backgroundImage: `linear-gradient(135deg, rgba(10, 14, 26, 0.7) 0%, rgba(59, 130, 246, 0.3) 50%, rgba(20, 184, 166, 0.3) 100%), url(${process.env.PUBLIC_URL}/gate.jpg)`
+        }}
+      >
         <div className="hero-content">
           <h1 id="hero-title" className="hero-title">
-            {t.heroTagline[language]}
+            Welcome to Ranabir Janahit Secondary School
           </h1>
-          <p className="hero-subtitle">{t.heroSubtitle[language]}</p>
+          <p className="hero-subtitle">
+            For over <span className="highlight">60 years</span>, we have been a cornerstone of education in Waling, Syangja, nurturing skilled professionals and future leaders through comprehensive programs and specialized <span className="highlight">technical training</span> in Electrical Engineering.
+          </p>
           
           {/* Quick action buttons */}
           <div className="hero-actions">
-            <Link to="/admissions" className="btn btn-primary">
-              {t.applyNow[language]}
+            <Link to="/courses" className="btn btn-primary">
+              Explore Courses
             </Link>
-            <Link to="/gallery" className="btn btn-secondary">
-              {t.viewGallery[language]}
-            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quotes Section */}
+      <section className="section quotes-section">
+        <div className="container">
+          <div className="quotes-carousel">
+            <div className="quote-container">
+              <blockquote className="inspirational-quote">
+                "{quotes[currentQuote].text}"
+              </blockquote>
+              <cite className="quote-author">- {quotes[currentQuote].author}</cite>
+            </div>
+            <div className="quote-dots">
+              {quotes.map((_, index) => (
+                <span 
+                  key={index} 
+                  className={`dot ${index === currentQuote ? 'active' : ''}`}
+                  onClick={() => setCurrentQuote(index)}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -35,27 +81,27 @@ function Home() {
       <section className="section welcome-section" aria-labelledby="welcome-title">
         <div className="container">
           <h2 id="welcome-title" className="section-title">
-            {t.welcomeTitle[language]}
+            Welcome to Ranabir Janahit Secondary School
           </h2>
           <p className="welcome-text">
-            {t.welcomeText[language]}
+            Established in 2020 B.S. (1963 A.D.), Ranabir Janahit Secondary School has been serving the Waling community for over 60 years. Located in Waling Municipality-1, Khahare, Syangja district, Gandaki Province, we are a premier public academic institution affiliated with NEB, approved by the Ministry of Education, and partnered with CTEVT for technical education. We offer comprehensive education from Grade 1 to 12, plus specialized technical programs including Diploma in Electrical Engineering and Pre-Diploma (Electrical Sub-overseer). Our mission is to ensure no local student remains unemployed due to lack of access to quality education and vocational training.
           </p>
 
           {/* Feature Cards */}
           <div className="feature-grid">
             <div className="feature-card">
-              <h3>{language === 'en' ? 'Modern Curriculum' : 'आधुनिक पाठ्यक्रम'}</h3>
-              <p>{language === 'en' ? 'SEE & NEB aligned programs' : 'SEE र NEB संग संरेखित कार्यक्रमहरू'}</p>
+              <h3>Grade 1 to 12 Education</h3>
+              <p>NEB affiliated academic programs with Ten Plus Two (+2) Management and Education streams</p>
             </div>
 
             <div className="feature-card">
-              <h3>{language === 'en' ? 'Smart Classes' : 'स्मार्ट कक्षाहरू'}</h3>
-              <p>{language === 'en' ? 'AI-assisted learning tools' : 'AI-सहायता सिकाइ उपकरणहरू'}</p>
+              <h3>Technical Education</h3>
+              <p>CTEVT programs: Diploma in Electrical Engineering & Pre-Diploma (Electrical Sub-overseer)</p>
             </div>
 
             <div className="feature-card">
-              <h3>{language === 'en' ? '95% Success Rate' : '९५% सफलता दर'}</h3>
-              <p>{language === 'en' ? 'Top results in SEE exams' : 'SEE परीक्षामा उत्कृष्ट परिणाम'}</p>
+              <h3>Scholarship Programs</h3>
+              <p>Moderate fees with scholarships for deserving, hardworking & underprivileged students</p>
             </div>
           </div>
         </div>
@@ -65,28 +111,34 @@ function Home() {
       <section className="section events-section" aria-labelledby="events-title">
         <div className="container">
           <h2 id="events-title" className="section-title">
-            {t.eventsTitle[language]}
+            Upcoming Events
           </h2>
 
           <div className="events-table-wrapper">
             <table className="events-table" role="table" aria-label="School events calendar">
               <thead>
                 <tr>
-                  <th>{language === 'en' ? 'Event' : 'कार्यक्रम'}</th>
-                  <th>{language === 'en' ? 'Date (BS)' : 'मिति (BS)'}</th>
-                  <th>{language === 'en' ? 'Type' : 'प्रकार'}</th>
+                  <th>Event</th>
+                  <th>Date (BS)</th>
+                  <th>Type</th>
                 </tr>
               </thead>
               <tbody>
-                {events.map((event, index) => (
-                  <tr key={index}>
-                    <td>{event.name[language]}</td>
-                    <td>{event.date[language]}</td>
-                    <td>
-                      <span className="event-badge">{event.type[language]}</span>
-                    </td>
-                  </tr>
-                ))}
+                <tr>
+                  <td>Dashain Vacation</td>
+                  <td>2082-06-15 to 2082-06-25</td>
+                  <td><span className="event-badge">Holiday</span></td>
+                </tr>
+                <tr>
+                  <td>Science Exhibition</td>
+                  <td>2082-07-10</td>
+                  <td><span className="event-badge">Academic</span></td>
+                </tr>
+                <tr>
+                  <td>Sports Week</td>
+                  <td>2082-08-01 to 2082-08-07</td>
+                  <td><span className="event-badge">Sports</span></td>
+                </tr>
               </tbody>
             </table>
           </div>

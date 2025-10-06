@@ -1,7 +1,7 @@
 {
-  "name": "himalaya-apex-academy",
+  "name": "ranabir-janahit-secondary-school",
   "version": "1.0.0",
-  "description": "AI-optimized school website mockup for Nepali schools - Himalaya Apex Academy",
+  "description": "Production-level school website for Ranabir Janahit Secondary School - Biratnagar, Nepal",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -43,7 +43,7 @@
     "nepali",
     "ai-optimized"
   ],
-  "author": "Himalaya Apex Academy",
+  "author": "Ranabir Janahit Secondary School",
   "license": "MIT",
   "devDependencies": {
     "sharp": "^0.34.4"

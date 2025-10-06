@@ -1,0 +1,70 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="100" cy="100" r="95" fill="#1e3a8a" stroke="#fbbf24" stroke-width="3"/>
+  
+  <!-- Inner Circle -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#fbbf24" stroke-width="2"/>
+  
+  <!-- Book Symbol -->
+  <g id="book">
+    <!-- Left page -->
+    <path d="M 60 75 L 60 125 Q 60 130 65 130 L 97 130 L 97 70 L 65 70 Q 60 70 60 75 Z" 
+          fill="#fbbf24" stroke="#1e3a8a" stroke-width="1.5"/>
+    
+    <!-- Right page -->
+    <path d="M 103 70 L 103 130 L 135 130 Q 140 130 140 125 L 140 75 Q 140 70 135 70 Z" 
+          fill="#fbbf24" stroke="#1e3a8a" stroke-width="1.5"/>
+    
+    <!-- Spine -->
+    <rect x="97" y="70" width="6" height="60" fill="#dc2626"/>
+    
+    <!-- Pages lines -->
+    <line x1="70" y1="85" x2="90" y2="85" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="70" y1="95" x2="90" y2="95" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="70" y1="105" x2="90" y2="105" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="70" y1="115" x2="90" y2="115" stroke="#1e3a8a" stroke-width="1"/>
+    
+    <line x1="110" y1="85" x2="130" y2="85" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="110" y1="95" x2="130" y2="95" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="110" y1="105" x2="130" y2="105" stroke="#1e3a8a" stroke-width="1"/>
+    <line x1="110" y1="115" x2="130" y2="115" stroke="#1e3a8a" stroke-width="1"/>
+  </g>
+  
+  <!-- Graduation Cap -->
+  <g id="cap" transform="translate(100, 50)">
+    <!-- Cap board -->
+    <path d="M -30 -15 L 0 -25 L 30 -15 L 30 -10 L 0 -20 L -30 -10 Z" 
+          fill="#fbbf24" stroke="#1e3a8a" stroke-width="1.5"/>
+    
+    <!-- Cap top -->
+    <circle cx="0" cy="-25" r="3" fill="#dc2626"/>
+    
+    <!-- Tassel -->
+    <line x1="0" y1="-25" x2="0" y2="-15" stroke="#dc2626" stroke-width="1.5"/>
+    <circle cx="0" cy="-13" r="2" fill="#dc2626"/>
+  </g>
+  
+  <!-- School Name Arc - Top -->
+  <path id="topArc" d="M 30 100 A 70 70 0 0 1 170 100" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fbbf24" letter-spacing="1">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      RANABIR JANAHIT
+    </textPath>
+  </text>
+  
+  <!-- School Name Arc - Bottom -->
+  <path id="bottomArc" d="M 170 100 A 70 70 0 0 1 30 100" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#fbbf24" letter-spacing="1">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      SECONDARY SCHOOL
+    </textPath>
+  </text>
+  
+  <!-- Decorative stars -->
+  <g id="stars">
+    <path d="M 25 100 L 27 106 L 33 106 L 28 110 L 30 116 L 25 112 L 20 116 L 22 110 L 17 106 L 23 106 Z" 
+          fill="#fbbf24" opacity="0.8"/>
+    <path d="M 175 100 L 177 106 L 183 106 L 178 110 L 180 116 L 175 112 L 170 116 L 172 110 L 167 106 L 173 106 Z" 
+          fill="#fbbf24" opacity="0.8"/>
+  </g>
+</svg>
