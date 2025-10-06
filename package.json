@@ -44,5 +44,8 @@
     "ai-optimized"
   ],
   "author": "Himalaya Apex Academy",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "sharp": "^0.34.4"
+  }
 }
