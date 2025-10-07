@@ -62,6 +62,9 @@ function Home() {
             <Link to="/courses" className="btn btn-primary">
               Explore Courses
             </Link>
+            <Link to="/gallery" className="btn btn-primary">
+              Go Inside Our School
+            </Link>
           </div>
         </div>
       </section>
