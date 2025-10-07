@@ -65,36 +65,6 @@ function About() {
           </div>
         </section>
 
-        {/* Facilities */}
-        <section className="section facilities-section">
-          <h2 className="section-title">Our Facilities</h2>
-          <div className="facilities-list">
-            <div className="facility-item">
-              <span className="facility-icon">🏫</span>
-              <span>Modern Classrooms with Smart Boards & Multimedia Teaching Aids</span>
-            </div>
-            <div className="facility-item">
-              <span className="facility-icon">💻</span>
-              <span>Computer Lab & Technical Education - CTEVT Affiliated Programs</span>
-            </div>
-            <div className="facility-item">
-              <span className="facility-icon">📚</span>
-              <span>Well-stocked Library with Books, Reference Materials & Study Resources</span>
-            </div>
-            <div className="facility-item">
-              <span className="facility-icon">🏀</span>
-              <span>Sports Facilities & Extra-Curricular Activities (ECA) Programs</span>
-            </div>
-            <div className="facility-item">
-              <span className="facility-icon">🔬</span>
-              <span>Science Laboratories for Physics, Chemistry & Biology Practical</span>
-            </div>
-            <div className="facility-item">
-              <span className="facility-icon">🚌</span>
-              <span>Counseling Services, Educational Tours & Scholarship Programs</span>
-            </div>
-          </div>
-        </section>
       </div>
     </div>
   );
