@@ -79,12 +79,12 @@ function Header() {
           </NavLink>
           
           <NavLink 
-            to="/programs" 
+            to="/events" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-            aria-label="Programs"
+            aria-label="Events"
             onClick={closeMobileMenu}
           >
-            Programs
+            Events
           </NavLink>
           
           <NavLink 

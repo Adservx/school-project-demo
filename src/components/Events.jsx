@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Programs() {
+function Events() {
   const [activeTab, setActiveTab] = useState('events');
 
   const events = [
@@ -50,7 +50,7 @@ function Programs() {
     <div className="page-container programs-page">
       {/* Page Header */}
       <div className="page-header">
-        <h1 className="page-title">Programs & Events</h1>
+        <h1 className="page-title">Events</h1>
         <p className="page-subtitle">Unfold Yourself & Enjoy the Moment</p>
       </div>
 
@@ -190,4 +190,4 @@ function Programs() {
   );
 }
 
-export default Programs;
+export default Events;

@@ -14,7 +14,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Courses from './components/Courses';
 import Facilities from './components/Facilities';
-import Programs from './components/Programs';
+import Events from './components/Events';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/courses" element={<Courses />} />
             <Route path="/facilities" element={<Facilities />} />
-            <Route path="/programs" element={<Programs />} />
+            <Route path="/events" element={<Events />} />
             <Route path="/admissions" element={<Admissions />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/contact" element={<Contact />} />
