@@ -16,7 +16,7 @@ function About() {
         <section className="section principal-message">
           <div className="message-card">
             <h2 className="section-title">Principal's Message</h2>
-            <p className="principal-name">Mr. Kamal Raj Lamsal</p>
+            <p className="principal-name">Ms. Laxmi Regmi</p>
             <p className="principal-designation">Focal Person & Principal</p>
             <div className="message-content">
               <p>Welcome to Ranabir Janahit Secondary School! Since 2020 B.S. (1963 A.D.), our institution has stood firmly on the foundation of public service and educational excellence. As a government-approved public school affiliated with NEB and CTEVT, we are dedicated to creating compassionate, socially responsible leaders who excel academically while remaining deeply connected to their community. Our mission is clear: ensuring no local student remains unemployed due to lack of access to quality education and vocational training. We prepare skilled electrical manpower and competent workforce to meet the growing electricity sector demands in Nepal. With modern facilities including multimedia classrooms, science laboratories, counseling services, conference facilities, and scholarship programs for deserving students, we ensure every student realizes their full potential while contributing to society.</p>

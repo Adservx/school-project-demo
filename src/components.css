@@ -1360,6 +1360,7 @@ textarea.form-input {
   .hero {
     background-attachment: scroll;
     background-position: center center;
+    background-size: cover !important;
     min-height: 80vh;
     padding: 2rem 1rem;
   }
@@ -1436,7 +1437,8 @@ textarea.form-input {
   .hero {
     min-height: 70vh;
     background-attachment: scroll;
-    background-position: 60% center;
+    background-position: center center;
+    background-size: cover !important;
     padding: 1.5rem 0.75rem;
   }
 

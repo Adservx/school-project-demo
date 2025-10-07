@@ -52,21 +52,21 @@ function Header() {
           </NavLink>
           
           <NavLink 
-            to="/about" 
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
-            aria-label="About"
-            onClick={closeMobileMenu}
-          >
-            About
-          </NavLink>
-          
-          <NavLink 
             to="/courses" 
             className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
             aria-label="Courses"
             onClick={closeMobileMenu}
           >
             Courses
+          </NavLink>
+          
+          <NavLink 
+            to="/about" 
+            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            aria-label="About"
+            onClick={closeMobileMenu}
+          >
+            About
           </NavLink>
           
           <NavLink 

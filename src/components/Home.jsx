@@ -34,15 +34,27 @@ function Home() {
         className="hero" 
         aria-labelledby="hero-title"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(10, 14, 26, 0.7) 0%, rgba(59, 130, 246, 0.3) 50%, rgba(20, 184, 166, 0.3) 100%), url(${process.env.PUBLIC_URL}/gate.jpg)`
+          backgroundImage: `linear-gradient(135deg, rgba(10, 14, 26, 0.7) 0%, rgba(59, 130, 246, 0.3) 50%, rgba(20, 184, 166, 0.3) 100%), url(${process.env.PUBLIC_URL}/gate.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat'
         }}
       >
         <div className="hero-content">
           <h1 id="hero-title" className="hero-title">
             Welcome to Ranabir Janahit Secondary School
           </h1>
-          <p className="hero-subtitle">
-            For over <span className="highlight">60 years</span>, we have been a cornerstone of education in Waling, Syangja, nurturing skilled professionals and future leaders through comprehensive programs and specialized <span className="highlight">technical training</span> in Electrical Engineering.
+          <p style={{
+            fontSize: '1.35rem',
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            color: '#3b82f6',
+            padding: '1rem 1.5rem',
+            borderRadius: '8px',
+            display: 'inline-block',
+            marginBottom: '2.5rem',
+            maxWidth: '800px'
+          }}>
+            For over 60 years, we have been a cornerstone of education in Waling, Syangja, nurturing skilled professionals and future leaders through comprehensive programs and specialized technical training in Electrical Engineering.
           </p>
           
           {/* Quick action buttons */}
@@ -107,43 +119,6 @@ function Home() {
         </div>
       </section>
 
-      {/* Events Calendar (Bikram Sambat dates) */}
-      <section className="section events-section" aria-labelledby="events-title">
-        <div className="container">
-          <h2 id="events-title" className="section-title">
-            Upcoming Events
-          </h2>
-
-          <div className="events-table-wrapper">
-            <table className="events-table" role="table" aria-label="School events calendar">
-              <thead>
-                <tr>
-                  <th>Event</th>
-                  <th>Date (BS)</th>
-                  <th>Type</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Dashain Vacation</td>
-                  <td>2082-06-15 to 2082-06-25</td>
-                  <td><span className="event-badge">Holiday</span></td>
-                </tr>
-                <tr>
-                  <td>Science Exhibition</td>
-                  <td>2082-07-10</td>
-                  <td><span className="event-badge">Academic</span></td>
-                </tr>
-                <tr>
-                  <td>Sports Week</td>
-                  <td>2082-08-01 to 2082-08-07</td>
-                  <td><span className="event-badge">Sports</span></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
