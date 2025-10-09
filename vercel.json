@@ -15,8 +15,16 @@
       "dest": "/glry/$1"
     },
     {
-      "src": "/favicon.ico",
-      "dest": "/favicon.ico"
+      "src": "/favicon.(ico|svg)",
+      "dest": "/favicon.$1"
+    },
+    {
+      "src": "/favicon-(16x16|32x32).png",
+      "dest": "/favicon-$1.png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "dest": "/apple-touch-icon.png"
     },
     {
       "src": "/manifest.json",
