@@ -66,15 +66,15 @@ export const events = [
 ];
 
 export const galleryImages = [
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.26_68255c10.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.29_c4e2fc9e.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.36_03cd76a5.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.37_01cafa9b.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.39_88ad23ff.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.41_8684cb58.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.42_804495fb.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.46_b0d839a2.jpg',
-  '/glry/WhatsApp Image 2025-10-06 at 10.45.48_c1306648.jpg'
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.26_68255c10.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.29_c4e2fc9e.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.36_03cd76a5.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.37_01cafa9b.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.39_88ad23ff.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.41_8684cb58.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.42_804495fb.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.46_b0d839a2.jpg',
+  '/glry/WhatsApp%20Image%202025-10-06%20at%2010.45.48_c1306648.jpg'
 ];
 
 export const eligibilityData = [

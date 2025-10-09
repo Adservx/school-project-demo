@@ -11,6 +11,10 @@
       "dest": "/static/$1"
     },
     {
+      "src": "/glry/(.*)",
+      "dest": "/glry/$1"
+    },
+    {
       "src": "/favicon.ico",
       "dest": "/favicon.ico"
     },
