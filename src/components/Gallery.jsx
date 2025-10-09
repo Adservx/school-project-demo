@@ -1,20 +1,20 @@
 import React, { useState } from 'react';
-import { galleryEvents } from '../utils/content';
+import { galleryImages } from '../utils/content';
 
-// CSS-only image placeholders for 2G speeds
+// Gallery with images from glry folder
 // Lightbox modal with keyboard navigation
 function Gallery() {
 
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   // Open lightbox
-  const openLightbox = (event) => {
-    setSelectedEvent(event);
+  const openLightbox = (image) => {
+    setSelectedImage(image);
   };
 
   // Close lightbox
   const closeLightbox = () => {
-    setSelectedEvent(null);
+    setSelectedImage(null);
   };
 
   // Keyboard accessibility for modal
@@ -28,36 +28,31 @@ function Gallery() {
     <div className="page-container gallery-page">
       {/* Header */}
       <section className="page-header">
-        <h1 className="page-title">Event Gallery</h1>
+        <h1 className="page-title">Our Gallery</h1>
         <p className="page-subtitle">Moments from Our School Life</p>
       </section>
 
       {/* Gallery Grid */}
       <section className="container">
         <div className="gallery-grid" role="list" aria-label="Event gallery">
-          {galleryEvents.map((event, index) => (
+          {galleryImages.map((image, index) => (
             <div
               key={index}
               className="gallery-card"
               role="listitem"
-              onClick={() => openLightbox(event)}
+              onClick={() => openLightbox(image)}
               onKeyDown={(e) => {
                 if (e.key === 'Enter' || e.key === ' ') {
                   e.preventDefault();
-                  openLightbox(event);
+                  openLightbox(image);
                 }
               }}
               tabIndex={0}
-              aria-label={`View ${event.title}`}
+              aria-label={`View image ${index + 1}`}
             >
-              {/* CSS-only gradient "image" - no actual image files */}
-              <div className={`gallery-image gradient-${index + 1}`}>
+              <div className="gallery-image">
+                <img src={image} alt={`Gallery ${index + 1}`} loading="lazy" />
                 <span className="view-icon">👁️</span>
-              </div>
-              
-              <div className="gallery-info">
-                <h3 className="event-title">{event.title}</h3>
-                <span className="gallery-category">{event.category}</span>
               </div>
             </div>
           ))}
@@ -65,7 +60,7 @@ function Gallery() {
       </section>
 
       {/* Lightbox Modal */}
-      {selectedEvent && (
+      {selectedImage && (
         <div
           className="lightbox-overlay"
           onClick={closeLightbox}
@@ -84,19 +79,8 @@ function Gallery() {
               ✕
             </button>
             
-            {/* Large version of CSS gradient */}
-            <div className={`lightbox-image gradient-${galleryEvents.indexOf(selectedEvent) + 1}`}>
-              <div className="lightbox-watermark">RJSS</div>
-            </div>
-            
-            <div className="lightbox-info">
-              <h2 id="lightbox-title" className="lightbox-title">
-                {selectedEvent.title}
-              </h2>
-              <p className="lightbox-category">{selectedEvent.category}</p>
-              <p className="lightbox-description">
-                A memorable {selectedEvent.category.toLowerCase()} event celebrating our school community.
-              </p>
+            <div className="lightbox-image">
+              <img src={selectedImage} alt="Gallery view" />
             </div>
 
             <button className="btn btn-primary" onClick={closeLightbox}>

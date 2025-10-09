@@ -47,7 +47,7 @@ function Home() {
           <p style={{
             fontSize: '1.35rem',
             backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            color: '#3b82f6',
+            color: 'white',
             padding: '1rem 1.5rem',
             borderRadius: '8px',
             display: 'inline-block',
