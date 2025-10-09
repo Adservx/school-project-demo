@@ -2544,6 +2544,9 @@ textarea.form-input {
   background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: var(--transition);
+  border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .dot.active {

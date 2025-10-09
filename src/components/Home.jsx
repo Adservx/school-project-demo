@@ -81,10 +81,12 @@ function Home() {
             </div>
             <div className="quote-dots">
               {quotes.map((_, index) => (
-                <span 
+                <button
                   key={index} 
                   className={`dot ${index === currentQuote ? 'active' : ''}`}
                   onClick={() => setCurrentQuote(index)}
+                  aria-label={`Show quote ${index + 1}`}
+                  type="button"
                 />
               ))}
             </div>

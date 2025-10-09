@@ -5,38 +5,70 @@
   "devCommand": "npm start",
   "installCommand": "npm install",
   "framework": null,
-  "routes": [
+  "headers": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "source": "/manifest.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/manifest+json"
+        },
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=0, must-revalidate"
+        }
+      ]
     },
     {
-      "src": "/glry/(.*)",
-      "dest": "/glry/$1"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/static/(.*)",
+      "destination": "/static/$1"
     },
     {
-      "src": "/favicon.(ico|svg)",
-      "dest": "/favicon.$1"
+      "source": "/glry/(.*)",
+      "destination": "/glry/$1"
     },
     {
-      "src": "/favicon-(16x16|32x32).png",
-      "dest": "/favicon-$1.png"
+      "source": "/favicon.(ico|svg)",
+      "destination": "/favicon.$1"
     },
     {
-      "src": "/apple-touch-icon.png",
-      "dest": "/apple-touch-icon.png"
+      "source": "/favicon-(16x16|32x32).png",
+      "destination": "/favicon-$1.png"
     },
     {
-      "src": "/manifest.json",
-      "dest": "/manifest.json"
+      "source": "/apple-touch-icon.png",
+      "destination": "/apple-touch-icon.png"
     },
     {
-      "src": "/logo(.*).png",
-      "dest": "/logo$1.png"
+      "source": "/manifest.json",
+      "destination": "/manifest.json"
     },
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/logo(.*).png",
+      "destination": "/logo$1.png"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
