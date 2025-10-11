@@ -12,7 +12,7 @@ const features = [
   },
   {
     icon: GraduationCap,
-    title: "Complete Education (Grade 1-12)",
+    title: "Complete Education (Grade Nursery-12)",
     description: "Full secondary education including Early Childhood Development and 10+2 in Education & Management.",
   },
   {

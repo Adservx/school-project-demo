@@ -49,7 +49,7 @@ export default function PrincipalPage() {
                   equipped with knowledge, skills, values, and the confidence to face life&apos;s challenges.
                 </p>
                 <p>
-                  Through our diverse programs—from Grade 1-12 general education to 10+2 streams in Education 
+                  Through our diverse programs—from Grade Nursery-12 general education to 10+2 streams in Education 
                   and Management, and CTEVT-affiliated technical courses in Electrical Engineering—we provide 
                   pathways for every student to discover and pursue their passion.
                 </p>

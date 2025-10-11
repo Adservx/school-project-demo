@@ -211,7 +211,7 @@ export function Navbar() {
               <div className="font-display font-bold text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl text-apex-platinum leading-tight">
                 RANABIR JANAHIT
               </div>
-              <div className="text-[10px] sm:text-xs text-apex-gold tracking-wider sm:tracking-widest">
+              <div className="text-[10px] sm:text-xs text-white tracking-wider sm:tracking-widest">
                 SECONDARY SCHOOL
               </div>
             </div>

@@ -89,7 +89,7 @@ export function HeroSection() {
             {[
               { value: "265+", label: "Total Students" },
               { value: "61+", label: "Years of Excellence" },
-              { value: "Grade 1-12", label: "Education Levels" },
+              { value: "Grade Nursery-12", label: "Education Levels" },
               { value: "CTEVT", label: "Affiliated Programs" },
             ].map((stat, index) => (
               <div key={index} className="text-center">

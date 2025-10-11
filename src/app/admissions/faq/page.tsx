@@ -17,7 +17,7 @@ export default function FAQPage() {
             </div>
             <div className="border-l-4 border-apex-gold pl-6 py-3 bg-apex-platinum/10 rounded-r-lg">
               <h3 className="font-semibold text-lg mb-2 text-apex-midnight">What programs do you offer?</h3>
-              <p className="text-gray-700">Grades 1-12, 10+2 Education & Management, CTEVT Electrical Engineering programs.</p>
+              <p className="text-gray-700">Grades Nursery-12, 10+2 Education & Management, CTEVT Electrical Engineering programs.</p>
             </div>
             <div className="border-l-4 border-apex-gold pl-6 py-3 bg-apex-platinum/10 rounded-r-lg">
               <h3 className="font-semibold text-lg mb-2 text-apex-midnight">Are scholarships available?</h3>

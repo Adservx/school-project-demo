@@ -10,7 +10,7 @@ const footerLinks = {
     { label: "Affiliations", href: "/about/affiliations" },
   ],
   academics: [
-    { label: "Grade 1-12 Programs", href: "/academics/programs" },
+    { label: "Grade Nursery-12 Programs", href: "/academics/programs" },
     { label: "10+2 Education & Management", href: "/academics/plus-two" },
     { label: "Electrical Engineering", href: "/academics/electrical" },
     { label: "CTEVT Programs", href: "/academics/ctevt" },

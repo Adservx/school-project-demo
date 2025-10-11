@@ -8,7 +8,7 @@ const newsItems = [
     title: "Admission Open for Academic Year 2082 B.S.",
     date: "2025-01-15",
     category: "Admissions",
-    excerpt: "Applications are now open for all programs including Grade 1-12, 10+2 Education & Management, and CTEVT Electrical Engineering courses.",
+    excerpt: "Applications are now open for all programs including Grade Nursery-12, 10+2 Education & Management, and CTEVT Electrical Engineering courses.",
     image: "admission"
   },
   {

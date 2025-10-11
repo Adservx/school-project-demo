@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     template: "%s | Ranabir Janahit Secondary School",
   },
   description:
-    "Government-aided community school in Khahare, Waling Municipality, Syangja, Nepal offering Grade 1-12, 10+2 academic streams, and CTEVT-affiliated Electrical Engineering programs.",
+    "Government-aided community school in Khahare, Waling Municipality, Syangja, Nepal offering Grade Nursery-12, 10+2 academic streams, and CTEVT-affiliated Electrical Engineering programs.",
   keywords: [
     "Ranabir Janahit Secondary School",
     "Ranabir Janahit",
