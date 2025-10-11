@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Playfair_Display, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 
@@ -27,17 +27,18 @@ const cormorant = Cormorant_Garamond({
   fallback: ['Georgia', 'serif'],
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+};
+
 export const metadata: Metadata = {
   title: "Ranabir Janahit Secondary School - Quality Education & Technical Training",
   description: "Government-aided community school in Syangja, Nepal offering Grade 1-12 education, 10+2 programs, and CTEVT-affiliated Electrical Engineering courses. Established 2019 B.S.",
   keywords: ["Ranabir Janahit", "secondary school", "Syangja", "Nepal", "CTEVT", "electrical engineering", "10+2 education", "Waling Municipality", "technical education"],
   authors: [{ name: "Ranabir Janahit Secondary School" }],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    userScalable: true,
-  },
   openGraph: {
     title: "Ranabir Janahit Secondary School - Building Competent Workforce",
     description: "Quality education and technical training in Khahare, Waling Municipality, Syangja, Nepal",
