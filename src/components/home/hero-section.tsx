@@ -44,7 +44,7 @@ export function HeroSection() {
           >
             Ranabir Janahit
             <br />
-            <span className="gold-shimmer animate-shimmer">
+            <span className="text-white">
               Secondary School
             </span>
           </motion.h1>
