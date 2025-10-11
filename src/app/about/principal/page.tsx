@@ -1,5 +1,6 @@
 import { PageLayout } from "@/components/layout/page-layout";
-import { Mail, Phone, Award, GraduationCap } from "lucide-react";
+import { Mail, Phone, Award } from "lucide-react";
+import Image from "next/image";
 
 export default function PrincipalPage() {
   return (
@@ -13,8 +14,14 @@ export default function PrincipalPage() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/3">
               <div className="bg-apex-gold/20 rounded-lg p-8 text-center">
-                <div className="w-32 h-32 bg-apex-midnight rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <GraduationCap className="h-16 w-16 text-apex-gold" />
+                <div className="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                  <Image 
+                    src="/princpic.jpg" 
+                    alt="Laxmi Regmi - Principal" 
+                    width={128} 
+                    height={128} 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="font-display text-2xl font-bold text-apex-midnight mb-2">Laxmi Regmi</h3>
                 <p className="text-apex-midnight/70 font-semibold mb-4">Principal</p>
