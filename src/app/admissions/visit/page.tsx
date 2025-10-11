@@ -21,7 +21,7 @@ export default function VisitPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-apex-platinum/20 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">What You'll See</h3>
+              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">What You&apos;ll See</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Classrooms and learning spaces</li>
                 <li>• Science and computer laboratories</li>
@@ -31,7 +31,7 @@ export default function VisitPage() {
               </ul>
             </div>
             <div className="bg-apex-platinum/20 p-4 rounded-lg">
-              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">Who You'll Meet</h3>
+              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">Who You&apos;ll Meet</h3>
               <ul className="space-y-2 text-gray-700 text-sm">
                 <li>• Principal and administrators</li>
                 <li>• Faculty members</li>

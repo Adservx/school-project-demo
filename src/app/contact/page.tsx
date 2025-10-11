@@ -201,7 +201,7 @@ export default function ContactPage() {
               <p className="text-sm text-apex-gold">+977 9856029222</p>
             </div>
             <div className="border-l-4 border-apex-gold pl-4">
-              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">Principal's Office</h3>
+              <h3 className="font-semibold text-lg mb-2 text-apex-midnight">Principal&apos;s Office</h3>
               <p className="text-sm text-gray-700 mb-2">Principal: Laxmi Regmi</p>
               <p className="text-sm text-apex-gold">ranabirjanahit@gmail.com</p>
             </div>

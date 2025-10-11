@@ -19,7 +19,7 @@ export default function EducationPage() {
             The program provides a strong foundation in educational theory, pedagogy, and subject knowledge.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Graduates are well-prepared for Bachelor's programs in Education (B.Ed.) and other academic fields, 
+            Graduates are well-prepared for Bachelor&apos;s programs in Education (B.Ed.) and other academic fields, 
             as well as for teaching positions after completing required qualifications.
           </p>
         </section>
@@ -85,7 +85,7 @@ export default function EducationPage() {
             </div>
             <div className="border-l-4 border-apex-gold pl-4 py-2">
               <h3 className="font-semibold text-lg mb-1 text-apex-midnight">Higher Education</h3>
-              <p className="text-gray-700">Continue to Bachelor's and Master's programs in Education or Arts.</p>
+              <p className="text-gray-700">Continue to Bachelor&apos;s and Master&apos;s programs in Education or Arts.</p>
             </div>
             <div className="border-l-4 border-apex-gold pl-4 py-2">
               <h3 className="font-semibold text-lg mb-1 text-apex-midnight">Educational Administration</h3>

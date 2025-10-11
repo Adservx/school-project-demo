@@ -68,12 +68,12 @@ export default function AdmissionsPage() {
             Welcome to Our Admissions Process
           </h2>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            We're excited that you're considering Ranabir Janahit Secondary School for your educational journey. 
+            We&apos;re excited that you&apos;re considering Ranabir Janahit Secondary School for your educational journey. 
             Our admissions process is designed to be straightforward and supportive, helping you find the right 
             program for your goals and aspirations.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Whether you're applying for general education, 10+2 programs, or technical training, we offer 
+            Whether you&apos;re applying for general education, 10+2 programs, or technical training, we offer 
             comprehensive support throughout the admission process. Explore the sections below to learn more 
             about requirements, fees, and how to apply.
           </p>

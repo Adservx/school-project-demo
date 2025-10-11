@@ -63,7 +63,7 @@ export default function StaffPage() {
             <div className="border-l-4 border-apex-gold pl-6 py-4 bg-apex-platinum/10 rounded-r-lg">
               <h3 className="font-semibold text-xl mb-2 text-apex-midnight">IT Support</h3>
               <p className="text-gray-700">
-                Our IT team maintains computer labs, manages the school's technology infrastructure, provides 
+                Our IT team maintains computer labs, manages the school&apos;s technology infrastructure, provides 
                 technical support, and assists with digital learning initiatives.
               </p>
             </div>

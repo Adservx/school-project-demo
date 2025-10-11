@@ -27,7 +27,7 @@ export default function AdmissionsContactPage() {
           </div>
         </section>
         <section className="bg-apex-midnight text-apex-platinum rounded-lg shadow-lg p-8">
-          <h2 className="font-display text-xl font-bold mb-4">We're Here to Help</h2>
+          <h2 className="font-display text-xl font-bold mb-4">We&apos;re Here to Help</h2>
           <p>Our admissions team is ready to answer your questions and guide you through the application process.</p>
         </section>
       </div>

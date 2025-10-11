@@ -156,7 +156,7 @@ export default function LowerSecondaryPage() {
           <p className="text-gray-700 leading-relaxed">
             Upon successful completion of Grade 8, students automatically progress to our secondary program 
             (Grades 9-10), where they will prepare for the Secondary Education Examination (SEE), a crucial 
-            milestone in Nepal's education system.
+            milestone in Nepal&apos;s education system.
           </p>
         </section>
 

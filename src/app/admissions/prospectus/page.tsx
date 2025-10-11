@@ -13,7 +13,7 @@ export default function ProspectusPage() {
           </div>
           <p className="text-gray-700 mb-6">Our prospectus contains comprehensive information about our programs, facilities, admission process, and fee structure.</p>
           <div className="bg-apex-platinum/20 p-6 rounded-lg mb-6">
-            <h3 className="font-semibold text-lg mb-3 text-apex-midnight">What's Included</h3>
+            <h3 className="font-semibold text-lg mb-3 text-apex-midnight">What&apos;s Included</h3>
             <div className="space-y-2">
               <div className="flex items-start space-x-2"><div className="w-2 h-2 bg-apex-gold rounded-full mt-2"></div><p className="text-gray-700">School history and mission</p></div>
               <div className="flex items-start space-x-2"><div className="w-2 h-2 bg-apex-gold rounded-full mt-2"></div><p className="text-gray-700">Program details and curriculum</p></div>

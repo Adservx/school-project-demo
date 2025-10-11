@@ -46,7 +46,7 @@ export default function PrincipalPage() {
                   Our school stands as a beacon of quality education in Syangja District, offering comprehensive 
                   programs from early childhood development to technical education. We believe that education is 
                   not merely about academic achievement, but about developing well-rounded individuals who are 
-                  equipped with knowledge, skills, values, and the confidence to face life's challenges.
+                  equipped with knowledge, skills, values, and the confidence to face life&apos;s challenges.
                 </p>
                 <p>
                   Through our diverse programs—from Grade 1-12 general education to 10+2 streams in Education 

@@ -140,7 +140,7 @@ export default function GalleryPage() {
         <section className="bg-white rounded-lg shadow-lg p-8">
           <h2 className="font-display text-xl font-bold text-apex-midnight mb-4">Photo Submission</h2>
           <p className="text-gray-700 mb-4">
-            If you have photos from school events or activities that you'd like to share, please contact 
+            If you have photos from school events or activities that you&apos;d like to share, please contact 
             our administration office. We welcome contributions from students, parents, and alumni.
           </p>
           <p className="text-sm text-gray-600">

@@ -79,7 +79,7 @@ export default function FacultyPage() {
             <div className="bg-apex-platinum/20 p-6 rounded-lg">
               <h3 className="font-semibold text-xl mb-3 text-apex-midnight">Academic Credentials</h3>
               <ul className="space-y-2 text-gray-700">
-                <li>• Master's and Bachelor's degrees from recognized universities</li>
+                <li>• Master&apos;s and Bachelor&apos;s degrees from recognized universities</li>
                 <li>• Specialized training in respective subject areas</li>
                 <li>• Teaching licenses and certifications</li>
                 <li>• Continuous professional development</li>
