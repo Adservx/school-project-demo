@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    unoptimized: true,
+    domains: ['images.unsplash.com', 'cdn.sanity.io'],
   },
   experimental: {
     optimizePackageImports: ['lucide-react', '@radix-ui/react-accordion', '@radix-ui/react-dialog'],
@@ -11,8 +11,6 @@ const nextConfig = {
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
-  // Enable static export
-  output: 'export',
   // Optimize bundle size
   modularizeImports: {
     'lucide-react': {
