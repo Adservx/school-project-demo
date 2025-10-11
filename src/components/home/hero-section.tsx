@@ -66,7 +66,7 @@ export function HeroSection() {
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0"
           >
             <Button variant="premium" size="xl" className="group w-full sm:w-auto text-sm sm:text-base">
-              Apply for OnlyFans
+              Apply Now
               <ChevronRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
