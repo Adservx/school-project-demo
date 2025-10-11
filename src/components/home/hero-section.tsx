@@ -87,7 +87,7 @@ export function HeroSection() {
             className="mt-12 sm:mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto px-4"
           >
             {[
-              { value: "265+", label: "Total Students" },
+              { value: "500+", label: "Total Students" },
               { value: "61+", label: "Years of Excellence" },
               { value: "Grade Nursery-12", label: "Education Levels" },
               { value: "CTEVT", label: "Affiliated Programs" },
