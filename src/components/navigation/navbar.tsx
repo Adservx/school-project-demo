@@ -9,9 +9,12 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 // Lazy load MegaMenu for better initial load performance
-const MegaMenu = dynamic(() => import("./mega-menu").then(mod => ({ default: mod.MegaMenu })), {
-  ssr: true,
-});
+const MegaMenu = dynamic(
+  () => import("./mega-menu").then((mod) => ({ default: mod.MegaMenu })),
+  {
+    ssr: true,
+  },
+);
 
 const aboutSections = [
   {
@@ -57,7 +60,10 @@ const academicsSections = [
     title: "General Education",
     items: [
       { title: "Grade 1-5 (Primary)", href: "/academics/primary" },
-      { title: "Grade 6-8 (Lower Secondary)", href: "/academics/lower-secondary" },
+      {
+        title: "Grade 6-8 (Lower Secondary)",
+        href: "/academics/lower-secondary",
+      },
       { title: "Grade 9-10 (Secondary)", href: "/academics/secondary" },
       { title: "Early Childhood Development", href: "/academics/ecd" },
     ],
@@ -188,16 +194,19 @@ export function Navbar() {
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
         isScrolled
           ? "bg-apex-midnight/95 backdrop-blur-md shadow-lg"
-          : "bg-apex-midnight"
+          : "bg-apex-midnight",
       )}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
+          <Link
+            href="/"
+            className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0"
+          >
             <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full overflow-hidden shadow-lg flex-shrink-0">
-              <Image 
-                src="/logo/logo.jpg" 
+              <Image
+                src="/logo/logo.jpg"
                 alt="Ranabir Janahit Secondary School Logo"
                 width={48}
                 height={48}
@@ -221,8 +230,16 @@ export function Navbar() {
           <div className="hidden lg:flex items-center space-x-1">
             <MegaMenu title="ABOUT" sections={aboutSections} prefetch />
             <MegaMenu title="ACADEMICS" sections={academicsSections} prefetch />
-            <MegaMenu title="ADMISSIONS" sections={admissionsSections} prefetch />
-            <MegaMenu title="CAMPUS LIFE" sections={campusLifeSections} prefetch />
+            <MegaMenu
+              title="ADMISSIONS"
+              sections={admissionsSections}
+              prefetch
+            />
+            <MegaMenu
+              title="CAMPUS LIFE"
+              sections={campusLifeSections}
+              prefetch
+            />
           </div>
 
           {/* Right Actions */}
@@ -233,10 +250,20 @@ export function Navbar() {
             >
               <Search className="h-4 w-4 sm:h-5 sm:w-5" />
             </button>
-            <Button variant="gold" size="sm" className="hidden md:inline-flex text-xs sm:text-sm">
-              Apply Now
-            </Button>
-            <Button variant="outline" size="sm" className="hidden lg:inline-flex border-apex-gold text-apex-gold hover:bg-apex-gold hover:text-apex-midnight text-xs sm:text-sm">
+            <Link href="/admissions/apply">
+              <Button
+                variant="gold"
+                size="sm"
+                className="hidden md:inline-flex text-xs sm:text-sm"
+              >
+                Apply Now
+              </Button>
+            </Link>
+            <Button
+              variant="outline"
+              size="sm"
+              className="hidden lg:inline-flex border-apex-gold text-apex-gold hover:bg-apex-gold hover:text-apex-midnight text-xs sm:text-sm"
+            >
               Portal
             </Button>
 
@@ -293,10 +320,15 @@ export function Navbar() {
               Campus Life
             </Link>
             <div className="pt-3 sm:pt-4 space-y-2 sm:space-y-3">
-              <Button variant="gold" className="w-full text-sm sm:text-base">
-                Apply Now
-              </Button>
-              <Button variant="outline" className="w-full border-apex-gold text-apex-gold text-sm sm:text-base">
+              <Link href="/admissions/apply" className="block">
+                <Button variant="gold" className="w-full text-sm sm:text-base">
+                  Apply Now
+                </Button>
+              </Link>
+              <Button
+                variant="outline"
+                className="w-full border-apex-gold text-apex-gold text-sm sm:text-base"
+              >
                 Portal Login
               </Button>
             </div>

@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { ChevronRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,7 @@ export function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-apex-midnight pt-20">
       {/* Background Video Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-apex-midnight via-apex-royal-blue/50 to-apex-midnight opacity-90 z-10" />
-      
+
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(212,175,55,0.1),transparent_50%)]" />
@@ -31,7 +32,9 @@ export function HeroSection() {
             className="inline-block mb-6"
           >
             <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-apex-gold/10 border border-apex-gold/30 rounded-full text-apex-gold text-xs sm:text-sm font-medium tracking-wider inline-block">
-              <span className="hidden sm:inline">ESTABLISHED 2019 B.S. • MODEL SCHOOL OF WALING MUNICIPALITY</span>
+              <span className="hidden sm:inline">
+                ESTABLISHED 2019 B.S. • MODEL SCHOOL OF WALING MUNICIPALITY
+              </span>
               <span className="sm:hidden">EST. 2019 B.S. • MODEL SCHOOL</span>
             </span>
           </motion.div>
@@ -44,9 +47,7 @@ export function HeroSection() {
           >
             Ranabir Janahit
             <br />
-            <span className="text-white">
-              Secondary School
-            </span>
+            <span className="text-white">Secondary School</span>
           </motion.h1>
 
           <motion.p
@@ -55,8 +56,9 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="text-base sm:text-lg md:text-xl lg:text-2xl text-apex-platinum/80 max-w-3xl mx-auto mb-8 sm:mb-12 leading-relaxed px-4"
           >
-            Empowering local communities through quality education and technical training.
-            No student should be unemployed due to lack of access to Technical Education and Vocational Training.
+            Empowering local communities through quality education and technical
+            training. No student should be unemployed due to lack of access to
+            Technical Education and Vocational Training.
           </motion.p>
 
           <motion.div
@@ -65,18 +67,26 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
             className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4 sm:px-0"
           >
-            <Button variant="premium" size="xl" className="group w-full sm:w-auto text-sm sm:text-base">
-              Apply Now
-              <ChevronRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              variant="outline"
-              size="xl"
-              className="border-apex-platinum/30 text-apex-midnight bg-apex-platinum hover:bg-apex-midnight hover:text-apex-platinum group w-full sm:w-auto text-sm sm:text-base transition-colors"
-            >
-              <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
-              Explore Our Campus
-            </Button>
+            <Link href="/admissions/apply">
+              <Button
+                variant="premium"
+                size="xl"
+                className="group w-full sm:w-auto text-sm sm:text-base"
+              >
+                Apply Now
+                <ChevronRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link href="/campus-life">
+              <Button
+                variant="outline"
+                size="xl"
+                className="border-apex-platinum/30 text-apex-midnight bg-apex-platinum hover:bg-apex-midnight hover:text-apex-platinum group w-full sm:w-auto text-sm sm:text-base transition-colors"
+              >
+                <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform" />
+                Explore Our Campus
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Stats */}
