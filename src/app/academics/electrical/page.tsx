@@ -248,7 +248,7 @@ export default function ElectricalEngineeringPage() {
               <li>• SEE (Secondary Education Examination) Pass Certificate</li>
               <li>• Character Certificate from previous school</li>
               <li>• Recent passport-size photographs</li>
-              <li>• Citizenship certificate (or parents' for minors)</li>
+              <li>• Citizenship certificate (or parents&apos; for minors)</li>
             </ul>
             <p className="font-semibold text-apex-midnight mb-3">For Diploma Program:</p>
             <ul className="space-y-2 text-gray-700">
