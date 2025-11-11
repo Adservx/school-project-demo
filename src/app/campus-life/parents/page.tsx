@@ -140,7 +140,7 @@ export default function ParentAssociationPage() {
               <div className="w-2 h-2 bg-apex-gold rounded-full mt-2 flex-shrink-0"></div>
               <div>
                 <h3 className="font-semibold text-apex-midnight mb-1">Better Understanding</h3>
-                <p className="text-gray-700">Gain insight into your child's educational experience and school environment</p>
+                <p className="text-gray-700">Gain insight into your child&apos;s educational experience and school environment</p>
               </div>
             </div>
             <div className="flex items-start space-x-3">
@@ -179,7 +179,7 @@ export default function ParentAssociationPage() {
           <div className="bg-gray-50 rounded-lg p-6">
             <p className="text-gray-700 mb-4">
               All parents and guardians are automatically members of the Parent Association and are
-              encouraged to participate actively. Here's how you can get involved:
+              encouraged to participate actively. Here&apos;s how you can get involved:
             </p>
             <div className="space-y-3">
               <div className="flex items-start space-x-2">
@@ -212,7 +212,7 @@ export default function ParentAssociationPage() {
             <h2 className="font-display text-2xl font-bold">Contact Parent Association</h2>
           </div>
           <p className="mb-4">
-            Have questions about the Parent Association or want to get more involved? We'd love to hear from you!
+            Have questions about the Parent Association or want to get more involved? We&apos;d love to hear from you!
             Contact the school office to connect with parent association representatives.
           </p>
           <p className="text-sm">

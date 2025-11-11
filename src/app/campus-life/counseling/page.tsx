@@ -151,7 +151,7 @@ export default function CounselingPage() {
             </p>
             <p className="leading-relaxed">
               <strong>Parent Involvement:</strong> Parents are welcome to schedule meetings to discuss their
-              child's progress, concerns, or to seek guidance on supporting their child's development.
+              child&apos;s progress, concerns, or to seek guidance on supporting their child&apos;s development.
             </p>
             <p className="leading-relaxed">
               <strong>Group Sessions:</strong> We also offer group counseling sessions and workshops on topics
@@ -166,7 +166,7 @@ export default function CounselingPage() {
             <h2 className="font-display text-2xl font-bold">Schedule a Counseling Session</h2>
           </div>
           <p className="mb-4">
-            Our counselors are here to help. Don't hesitate to reach out if you or your child needs support.
+            Our counselors are here to help. Don&apos;t hesitate to reach out if you or your child needs support.
             All services are confidential and provided with care and professionalism.
           </p>
           <p className="text-sm">

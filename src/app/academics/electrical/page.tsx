@@ -22,7 +22,7 @@ export default function ElectricalEngineeringPage() {
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
             Ranabir Janahit Secondary School is proud to offer comprehensive electrical engineering programs
             affiliated with CTEVT (Council for Technical Education and Vocational Training). Our programs
-            are designed to produce skilled electrical engineers who can meet the growing demands of Nepal's
+            are designed to produce skilled electrical engineers who can meet the growing demands of Nepal&apos;s
             technical workforce.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">

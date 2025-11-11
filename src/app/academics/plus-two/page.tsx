@@ -127,7 +127,7 @@ export default function PlusTwoPage() {
               <CheckCircle className="h-6 w-6 text-apex-gold mt-1 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold text-apex-midnight mb-1">University Pathway</h3>
-                <p className="text-gray-700">Direct pathway to bachelor's programs in Nepali universities</p>
+                <p className="text-gray-700">Direct pathway to bachelor&apos;s programs in Nepali universities</p>
               </div>
             </div>
           </div>

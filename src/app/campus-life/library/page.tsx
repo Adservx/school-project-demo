@@ -20,7 +20,7 @@ export default function CampusLibraryPage() {
             <h2 className="font-display text-3xl font-bold text-apex-midnight">A Hub of Learning</h2>
           </div>
           <p className="text-lg text-gray-700 leading-relaxed mb-4">
-            The Ranabir Janahit Secondary School library is more than just a collection of books—it's a
+            The Ranabir Janahit Secondary School library is more than just a collection of books—it&apos;s a
             vibrant learning space that supports academic excellence and fosters a love for reading. Our
             well-stocked library provides students with access to a wide range of resources to support
             their studies and personal growth.

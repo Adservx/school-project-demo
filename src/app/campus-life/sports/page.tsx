@@ -206,7 +206,7 @@ export default function SportsPage() {
           </div>
           <div className="bg-gray-50 rounded-lg p-6">
             <p className="text-gray-700 mb-4">
-              All students are encouraged to participate in sports activities. Whether you're an experienced
+              All students are encouraged to participate in sports activities. Whether you&apos;re an experienced
               athlete or just starting out, our sports program has something for everyone.
             </p>
             <div className="space-y-2">
@@ -225,7 +225,7 @@ export default function SportsPage() {
           </div>
           <p className="mb-4">
             For more information about our sports programs, facilities, or how to get involved,
-            contact the school's sports coordinator or administration office.
+            contact the school&apos;s sports coordinator or administration office.
           </p>
           <p className="text-sm">
             <strong>Contact:</strong> +977 9856029222 | ranabirjanahit@gmail.com

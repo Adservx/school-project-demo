@@ -85,7 +85,7 @@ export default function CommunityServicePage() {
               </div>
               <p className="text-gray-700 mb-2">Raising awareness on important social issues:</p>
               <ul className="space-y-1 text-sm text-gray-600 ml-4">
-                <li>• Gender equality and women's empowerment programs</li>
+                <li>• Gender equality and women&apos;s empowerment programs</li>
                 <li>• Child rights and protection awareness</li>
                 <li>• Anti-drug and substance abuse campaigns</li>
                 <li>• Disaster preparedness and safety education</li>
@@ -157,15 +157,15 @@ export default function CommunityServicePage() {
           <div className="space-y-4">
             <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-apex-gold">
               <p className="text-gray-700 italic mb-2">
-                "Participating in community service taught me the value of giving back. The tree plantation
-                drive we organized made me realize how small actions can create big impacts."
+                &quot;Participating in community service taught me the value of giving back. The tree plantation
+                drive we organized made me realize how small actions can create big impacts.&quot;
               </p>
               <p className="text-sm text-apex-midnight font-semibold">- Grade 10 Student</p>
             </div>
             <div className="bg-gray-50 rounded-lg p-6 border-l-4 border-apex-gold">
               <p className="text-gray-700 italic mb-2">
-                "Teaching basic electrical skills to villagers as part of our CTEVT service program
-                was incredibly rewarding. It showed me how education can transform lives."
+                &quot;Teaching basic electrical skills to villagers as part of our CTEVT service program
+                was incredibly rewarding. It showed me how education can transform lives.&quot;
               </p>
               <p className="text-sm text-apex-midnight font-semibold">- Diploma Student</p>
             </div>

@@ -25,7 +25,7 @@ export default function DownloadsPage() {
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             All documents are available for download. If you need assistance or cannot find what
-            you're looking for, please contact the school office.
+            you&apos;re looking for, please contact the school office.
           </p>
         </section>
 
@@ -276,12 +276,12 @@ export default function DownloadsPage() {
             <div>
               <h3 className="font-semibold text-blue-900 mb-2">Need Help?</h3>
               <p className="text-blue-800 text-sm mb-3">
-                If you're having trouble downloading any documents or need a specific form that's not listed here,
-                please contact the school office. We're happy to assist you.
+                If you&apos;re having trouble downloading any documents or need a specific form that&apos;s not listed here,
+                please contact the school office. We&apos;re happy to assist you.
               </p>
               <p className="text-blue-800 text-sm">
                 <strong>Note:</strong> Some documents may require Adobe PDF Reader to view. You can download it for free
-                from Adobe's official website.
+                from Adobe&apos;s official website.
               </p>
             </div>
           </div>
@@ -293,7 +293,7 @@ export default function DownloadsPage() {
             <h2 className="font-display text-2xl font-bold">Request Additional Documents</h2>
           </div>
           <p className="mb-4">
-            Can't find the document you need? Contact us and we'll be happy to provide it or guide you
+            Can&apos;t find the document you need? Contact us and we&apos;ll be happy to provide it or guide you
             to the right resource.
           </p>
           <p className="text-sm">
